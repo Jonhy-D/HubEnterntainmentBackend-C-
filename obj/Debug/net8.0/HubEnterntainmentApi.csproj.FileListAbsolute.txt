@@ -136,3 +136,4 @@ C:\Users\isaia\Dev\HubEnterntainmentApi\obj\Debug\net8.0\refint\HubEnterntainmen
 C:\Users\isaia\Dev\HubEnterntainmentApi\obj\Debug\net8.0\HubEnterntainmentApi.pdb
 C:\Users\isaia\Dev\HubEnterntainmentApi\obj\Debug\net8.0\HubEnterntainmentApi.genruntimeconfig.cache
 C:\Users\isaia\Dev\HubEnterntainmentApi\obj\Debug\net8.0\ref\HubEnterntainmentApi.dll
+C:\Users\isaia\Dev\HubEnterntainmentApi\obj\Debug\net8.0\HubEnterntainmentApi.sourcelink.json
