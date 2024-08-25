@@ -6,7 +6,7 @@ This is the backend repository of [Hub Entertainment Mega](https://github.com/Jo
 
 ## Technical requirements
 
-This project was generated with ASP.NET and C#.
+This project was generated with **ASP.NET** and **C#**, for the deployment of virtual applications at the operating system level use **Docker** and for deployment automation, scaling, and container management use **Kubernetes**.
 
 ## How to install the project
 
@@ -21,7 +21,8 @@ Clone repository with this command:
 
 ### Third Step:
 
-You need to create a file **appsettings.json** with the next requirements in the root of the project:
+Once the repository is cloned you will have to create a file in the root of the project called **appsettings.json** with the next requirements:
+
 ```
 {
   "Logging": {
@@ -39,7 +40,7 @@ You need to create a file **appsettings.json** with the next requirements in the
 
 ### Final Step
 
-Run `dotnet run` to lift the project at the specified port.
+Run `dotnet run` to run the project at the specified port.
 
 ### Remember need a database
 
@@ -49,7 +50,14 @@ The database is in the file called **HubEnterntainment.dacpac**
 
 ### Goals
 
-- Implement a productive project with Kubernetes.
+#### Implement a productive project with Kubernetes.
+
+- Kubernetes Deployment
+- Docker Deployment
+- API in ASP.net or net core - MVC
+- Complete documentation
+- Improvements of my own consideration
+- Configuration of the production environment
 
 ## Entity-Relationship Diagram
 
@@ -83,11 +91,11 @@ This endpoint is to get all the stored series:
 
 `GET /series`
 
-This endpoint is to add to the user's favorite movies section:
+This endpoint is to get all the stored favorite movies section:
 
 `POST /addFavMov`
 
-This endpoint is to add to the user's favorite series section:
+This endpoint is to get all the stored favorite series section:
 
 `POST /addFavSer`
 
