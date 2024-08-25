@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HubEnterntainmentApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+101b84b8f2b9982d5d416ed446c77230daf3e3ed")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c3c250bfb9fb83c3f611f054c3934b6193b1d9fe")]
 [assembly: System.Reflection.AssemblyProductAttribute("HubEnterntainmentApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HubEnterntainmentApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

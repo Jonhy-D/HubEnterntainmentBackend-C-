@@ -46,35 +46,8 @@ Run `dotnet run` to run the project at the specified port.
 
 The database is in the file called **HubEnterntainment.dacpac**
 
-# Sprint 6
-
-### Goals
-
-#### Implement a productive project with Kubernetes.
-
-- Kubernetes Deployment
-- Docker Deployment
-- API in ASP.net or net core - MVC
-- Complete documentation
-- Improvements of my own consideration
-- Configuration of the production environment
-
-## Entity-Relationship Diagram
-
-This is the entity relationship diagram of the hub entertainment mega project database according to my point of view.
-
-![Entity-Relationship Diagram Image](/public/Entity-Relationship.webp)
-
-## Process
-
-- First I created the tables that were the main ones that were users, movies and series. 
-- After having created those tables to be able to store those items, then I had to see the functions of my application to be able to make the other tables that are the user's favorites and Since in MySQL there are relationship tables.
-- I had to think about how the user relates to those tables and thus create the other tables of favorite movies and favorite series.
-- The next step was to create the backend, which is only a provisional backend because we will implement a different one with a different technology. The different endpoints were created so that they could be consumed from the frontend.
-- The last thing I did in this sprint was to create the user login but I had a problem with the redirects and being able to make a registration.
-- Create a cookie so that the login is saved for 3 days so that the session is not lost.
-
 #### Diferents endpoints
+
 This endpoint is for creating users:
 
 `POST /users` 
@@ -99,15 +72,61 @@ This endpoint is to get all the stored favorite series section:
 
 `POST /addFavSer`
 
+# Sprint 6
+
+### Goals
+
+#### Implement a productive project with Kubernetes.
+
+- Kubernetes Deployment
+- Docker Deployment
+- API in ASP.net or net core - MVC
+- Complete documentation
+- Possible future improvements
+
+## Entity-Relationship Diagram
+
+This is the entity relationship diagram of the hub entertainment mega project database according to my point of view.
+
+![Entity-Relationship Diagram Image](/public/Entity-Relationship.webp)
+
+## Images Docker Desktop
+
+### Frontend and Backend Images 
+
+![Frontend and Backend Images](/public/Images-Docker.webp)
+
+### Containers
+
+![Containers](/public/Containers_Docker.webp)
+
+## Pods
+
+![Pods](/public/Pods.webp)
+
+## Process
+
+- The first step was to build the **dockerfile** and **deployment** files
+- The second step is to build your project both the frontend and the backend.
+- Since we have the builds, we move on to creating the images to upload them to the minikube.
+- After we have the images uploaded, we can now proceed to deploy them with the **.yaml** file. This file must be configured according to the needs of the application or, as in this case, simply make it work.
+- But since we have to do it in the backend and in the frontend then we have to repeat all the previous steps.
+- The steps that were complex were getting the image with the deployment because I don't know why I got errors about anything, I solved one error and another one came out, I don't know if it's because it works on Windows, but it was very complex.
+
 ## Issues
 
-- My first problem was connect to the database with my backend application, because When I tried to connect the server send to me an alert with the code error but I don't know how to fix this error.
-- After that error, many errors of different types began to appear.
-- The biggest error that took me a long time to find was because my database could not connect to my backend and it was because I was not getting some error code that was in problem forums but in the end it was a problem with the TCP protocols of SQL Server Management.
-- Another error that I couldn't solve was a problem with how to store a variable that comes from the response of the POST request in order to use it in a different component, and that was one of the ones I had the most problems with and couldn't solve in order to make my favorites section work because I needed that value to be able to make the query.
+- The first problem I encountered was that I was typing a command wrong and, as always happens when there is an error due to a single letter, it takes longer than with an error that you don't know about because the fact of thinking that it is correct makes it difficult to find the error.
+- The second error was the image with the deployment that did not want to find the image for some reason I don't know why it did not want to find the image for no reason because the commands were correct.
+- I also had a problem migrating the database from Node to C# because there were things I had never done in C#, so it was a challenge to figure out how to do what I was doing with Node.js.
 
 ## Table Sprint Review
 
 | **What was done well?** | **What can I do differently?** | **What didn't go well?** |
 ------------------|----------------------------|-----------------------
-| In this sprint I think there were few things that went well because I had to do a lot of research. But the main thing that went well was the creation of the database with T-SQL and the creation of the entity relationship diagram. | In this sprint I think what I needed most was to be able to ask my questions in private sessions because I feel that there is not enough time to be able to help with errors and communication. | The implementation of connecting my database with my application was quite tiring because many errors came up that I had never seen before, but the good thing was that in the session they gave many tips to get out of the hole. |
+| Recreating the database in C# was one of the parts that was really good because I was comparing the different ways of doing things in each language and I liked absorbing the information and trying to remember that, I like it. | Manage my time a little better solving the errors because I would get so frustrated with a mistake that I would spend my time just thinking about it instead of going out to clear my head and try again. | Trying to fix or debug code without checking any documentation or searching the internet for how to resolve the error would have saved me a lot of time, but even when I tried to search for it, it was still difficult for me to find a way to resolve the errors. |
+
+## Possible future improvements
+
+- Make the backend more extensive so that the application could do more things.
+- Complete the person's profile section.
+- Improve the frontend with Media queries in many places that I couldn't do due to lack of time.
