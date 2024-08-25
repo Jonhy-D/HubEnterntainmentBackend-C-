@@ -46,7 +46,7 @@ Run `dotnet run` to run the project at the specified port.
 
 The database is in the file called **HubEnterntainment.dacpac**
 
-#### Diferents endpoints
+## Endpoints
 
 This endpoint is for creating users:
 
