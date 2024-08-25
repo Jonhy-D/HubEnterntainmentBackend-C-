@@ -72,6 +72,12 @@ This endpoint is to get all the stored favorite series section:
 
 `POST /addFavSer`
 
+## Entity-Relationship Diagram
+
+This is the entity relationship diagram of the hub entertainment mega project database according to my point of view.
+
+![Entity-Relationship Diagram Image](/public/Entity-Relationship.webp)
+
 # Sprint 6
 
 ### Goals
@@ -83,12 +89,6 @@ This endpoint is to get all the stored favorite series section:
 - API in ASP.net or net core - MVC
 - Complete documentation
 - Possible future improvements
-
-## Entity-Relationship Diagram
-
-This is the entity relationship diagram of the hub entertainment mega project database according to my point of view.
-
-![Entity-Relationship Diagram Image](/public/Entity-Relationship.webp)
 
 ## Images Docker Desktop
 
